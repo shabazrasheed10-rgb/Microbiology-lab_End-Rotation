@@ -642,16 +642,21 @@
   </div>
 
   
-  <script>
+   <script>
     function toggleAnswer(id) {
         var x = document.getElementById(id);
+        // Find the button that was just clicked
+        var btn = event.currentTarget; 
+
         if (x.style.display === "block") {
             x.style.display = "none";
+            btn.innerHTML = "Show Answer";
         } else {
             x.style.display = "block";
+            btn.innerHTML = "Hide Answer";
         }
     }
-</script>
+   </script>
 
 </body>
 </html>
