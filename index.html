@@ -5,39 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practical end-rotation_Microbiology</title>
     
-    
-    
- <div class="header">
-        <h3>End-Rotation&Final</h3>
-        <h5>Microbiology Labs</h5>
-        <h5>2022-2025</h5>
-        <h5>Created by <a href="https://t.me/Shabaz_Rasheed">Shabaz Rasheed</a></h5>
-    </div>
-    
-    
     <style>
+        /* General Styles */
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f9;
             padding: 20px;
+            /* PROTECTION: Prevents text selection */
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
         }
 
-        /* The Main Box for each past paper question */
-        .quiz-card {
-            display: flex;
-            flex-direction: row; 
-            align-items: flex-start; 
-            background: white;
-            border: 1px solid #ccc;
-            border-radius: 7px;
-            max-width: 900px;
-            margin: 0 auto 30px auto; 
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            
+        /* PROTECTION: Makes page blank when trying to print or save as PDF */
+        @media print {
+            body {
+                display: none !important;
+            }
         }
-        
-        
+
         .header { 
             text-align: center; 
             margin-bottom: 20px;
@@ -51,7 +38,7 @@
             margin-bottom: 70px;
         }
         
-          @media (max-width: 600px) {
+        @media (max-width: 600px) {
             .header {
                 flex-direction: column;
                 gap: 8px;
@@ -62,8 +49,19 @@
             }
         }
         
-        a { 
-            color: #729fcf; 
+        a { color: #729fcf; }
+
+        .quiz-card {
+            display: flex;
+            flex-direction: row; 
+            align-items: flex-start; 
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 7px;
+            max-width: 900px;
+            margin: 0 auto 30px auto; 
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
 
         .question-section {
@@ -110,9 +108,9 @@
             color: #2e7d32;
             font-size: 0.95em;
             border-radius: 5px;
-            
         }
-        .lab{
+
+        .lab {
           margin-bottom: 100px;
           border-bottom: 2px solid grey;
         }
@@ -128,10 +126,6 @@
             margin-top: 12px;
         }
         
-        .choice{
-          margin-top:15px ;
-        }
-
         button:hover {
             background-color: #5E8BB9;
         }
@@ -148,515 +142,441 @@
     </style>
 </head>
 <body>
-<div class="lab">
-   <h1 style="text-align:center;">LAB 1 - END-ROTATION</h1>
 
-<div class="quiz-card">
-    <div class="question-section">
-        <div class="question-item">
-            <span class="question-text"><strong>Q1:</strong> What’s this technique called?</span>
-            <button onclick="toggleAnswer('ans1a')">Show Answer</button>
-            <div id="ans1a" class="answer-box">flaming by bunsen burner</div>
-        </div>
-
-        <div class="question-item">
-            <span class="question-text"><strong>Q2:</strong> It’s used for sterilizing what?</span>
-            <button onclick="toggleAnswer('ans1b')">Show Answer</button>
-            <div id="ans1b" class="answer-box">Inoculation loops and needles</div>
-        </div>
-        
-    
+    <div class="header">
+        <h3>End-Rotation&Final</h3>
+        <h5>Microbiology Labs</h5>
+        <h5>2022-2025</h5>
+        <h5>Created by <a href="https://t.me/Shabaz_Rasheed">Shabaz Rasheed</a></h5>
     </div>
 
-    <div class="image-section">
-        <img src="https://files.catbox.moe/7cegra.jpg" alt="Exam Image">
-    </div>
-</div>
-
-<div class="quiz-card">
-    <div class="question-section">
-        <div class="question-item">
-            <span class="question-text"><strong>Q1:</strong> What is the name of the method?</span>
-            <button onclick="toggleAnswer('ans1c')">Show Answer</button>
-            <div id="ans1c" class="answer-box">Filtration</div>
-        </div>
-
-        <div class="question-item">
-            <span class="question-text"><strong>Q2:</strong> It's used for what?</span>
-            <button onclick="toggleAnswer('ans1d')">Show Answer</button>
-            <div id="ans1d" class="answer-box">Bacteria, Fungi, and Yeasts</div>
-        </div>
-    </div>
-
-    <div class="image-section">
-        <img src="https://files.catbox.moe/6q3j4h.jpg" alt="Exam Image">
-    </div>
-</div>
-
-<div class="quiz-card">
-    <div class="question-section">
-        <div class="question-item">
-            <span class="question-text"><strong>Q1:</strong> What’s the technique used for?</span>
-            <button onclick="toggleAnswer('ans1e')">Show Answer</button>
-            <div id="ans1e" class="answer-box">Filtration</div>
-        </div>
-
-        <div class="question-item">
-            <span class="question-text"><strong>Q2:</strong> What is the name of structure A&B?</span>
-            <button onclick="toggleAnswer('ans1f')">Show Answer</button>
-            <div id="ans1f" class="answer-box">
-            <div>A. Filter</div>
-            <div>B. To vacum pump</div>
-            </div>
-        </div>
-    </div>
-
-    <div class="image-section">
-        <img src="https://files.catbox.moe/6q3j4h.jpg" alt="Exam Image">
-    </div>
-</div>
-</div>
-        
     <div class="lab">
-  <h1 style="text-align:center;">LAB 2 - END-ROTATION</h1>
-
-<div class="quiz-card">
-    <div class="question-section">
-        <div class="question-item">
-            <span class="question-text"><strong>Q1:</strong> Which of the following is used for detection of haemolysis?
-             <ul style="list-style-type: disc; margin-left: 20px; padding: 0; line-height: 1.8;">
-            <div>A. Mac Conkey agar</div>
-            <div>B. Nutrition broth</div>
-            <div>C. Blood agar</div>
-            <div>D. Chocalate</div>
-            </ul>
-            </span>
-            <button onclick="toggleAnswer('ans2a')">Show Answer</button>
-            <div id="ans2a" class="answer-box">C. Blood agar</div>
+        <h1 style="text-align:center;">LAB 1 - END-ROTATION</h1>
+        <div class="quiz-card">
+            <div class="question-section">
+                <div class="question-item">
+                    <span class="question-text"><strong>Q1:</strong> What’s this technique called?</span>
+                    <button onclick="toggleAnswer('ans1a')">Show Answer</button>
+                    <div id="ans1a" class="answer-box">flaming by bunsen burner</div>
+                </div>
+                <div class="question-item">
+                    <span class="question-text"><strong>Q2:</strong> It’s used for sterilizing what?</span>
+                    <button onclick="toggleAnswer('ans1b')">Show Answer</button>
+                    <div id="ans1b" class="answer-box">Inoculation loops and needles</div>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="https://files.catbox.moe/7cegra.jpg" alt="Exam Image">
+            </div>
         </div>
 
-        
-        
-    
-    </div>
-
-    <div class="image-section">
-        <img src="https://files.catbox.moe/ejn2qb.jpg" alt="Exam Image">
-    </div>
-</div>
-
-<div class="quiz-card">
-    <div class="question-section">
-        <div class="question-item">
-            <span class="question-text"><strong>Q1:</strong> What is this called?</span>
-            <button onclick="toggleAnswer('ans2b')">Show Answer</button>
-            <div id="ans2b" class="answer-box">Transport medium (cary-blair medium)</div>
+        <div class="quiz-card">
+            <div class="question-section">
+                <div class="question-item">
+                    <span class="question-text"><strong>Q1:</strong> What is the name of the method?</span>
+                    <button onclick="toggleAnswer('ans1c')">Show Answer</button>
+                    <div id="ans1c" class="answer-box">Filtration</div>
+                </div>
+                <div class="question-item">
+                    <span class="question-text"><strong>Q2:</strong> It's used for what?</span>
+                    <button onclick="toggleAnswer('ans1d')">Show Answer</button>
+                    <div id="ans1d" class="answer-box">Bacteria, Fungi, and Yeasts</div>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="https://files.catbox.moe/6q3j4h.jpg" alt="Exam Image">
+            </div>
         </div>
 
-        <div class="question-item">
-            <span class="question-text"><strong>Q2:</strong> What is used for?</span>
-            <button onclick="toggleAnswer('ans2c')">Show Answer</button>
-            <div id="ans2c" class="answer-box">for transporting specimens</div>
-        </div>
-    </div>
-
-    <div class="image-section">
-        <img src="https://files.catbox.moe/pmv829.jpg" alt="Exam Image">
-    </div>
-</div>
-
-<div class="quiz-card">
-    <div class="question-section">
-        <div class="question-item">
-            <span class="question-text"><strong>Q1:</strong> Which of the following is both selective and differential media?
-<ul style="list-style-type: disc; margin-left: 20px; padding: 0; line-height: 1.8;">
-<div>A. Nutrient agar</div>
-<div>B. Blood agar</div>
-<div>C. MacConkey agar</div>
-<div>D. Chocolate agar</div>
-<div>E. Enriched media</div>
-</ul>
-</span>
-            <button onclick="toggleAnswer('ans2d')">Show Answer</button>
-            <div id="ans2d" class="answer-box">C. MacConkey agar</div>
-        </div>
-    </div>
-
-       
-
-    <div class="image-section">
-        <img src="https://files.catbox.moe/aqujmp.jpg" alt="Exam Image">
-    </div>
-</div>
-<div class="quiz-card">
-    <div class="question-section">
-        <div class="question-item">
-            <span class="question-text"><strong>Q1:</strong> Identify the media.</span>
-            <button onclick="toggleAnswer('ans2e')">Show Answer</button>
-            <div id="ans2e" class="answer-box">Mac Conkey’s agar</div>
-        </div>
-
-        <div class="question-item">
-            <span class="question-text"><strong>Q2:</strong> Mention the type of the media according to its functional use.</span>
-            <button onclick="toggleAnswer('ans2f')">Show Answer</button>
-            <div id="ans2f" class="answer-box"> Selective media
+        <div class="quiz-card">
+            <div class="question-section">
+                <div class="question-item">
+                    <span class="question-text"><strong>Q1:</strong> What’s the technique used for?</span>
+                    <button onclick="toggleAnswer('ans1e')">Show Answer</button>
+                    <div id="ans1e" class="answer-box">Filtration</div>
+                </div>
+                <div class="question-item">
+                    <span class="question-text"><strong>Q2:</strong> What is the name of structure A&B?</span>
+                    <button onclick="toggleAnswer('ans1f')">Show Answer</button>
+                    <div id="ans1f" class="answer-box">
+                        <div>A. Filter</div>
+                        <div>B. To vacuum pump</div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="https://files.catbox.moe/6q3j4h.jpg" alt="Exam Image">
             </div>
         </div>
     </div>
 
-    <div class="image-section">
-        <img src="https://files.catbox.moe/99yvym.jpg" alt="Exam Image">
-    </div>
-</div>
-</div>
-        
-  
-  
-  
-  <div class="lab">
-  <h1 style="text-align:center;">LAB 3 - END-ROTATION</h1>
-
-<div class="quiz-card">
-    <div class="question-section">
-        <div class="question-item">
-            <span class="question-text"><strong>Q1:</strong> Identify the action.</span>
-            <button onclick="toggleAnswer('ans3a')">Show Answer</button>
-            <div id="ans3a" class="answer-box">Inoculation</div>
+    <div class="lab">
+        <h1 style="text-align:center;">LAB 2 - END-ROTATION</h1>
+        <div class="quiz-card">
+            <div class="question-section">
+                <div class="question-item">
+                    <span class="question-text"><strong>Q1:</strong> Which of the following is used for detection of haemolysis?
+                        <ul style="list-style-type: disc; margin-left: 20px; padding: 0; line-height: 1.8;">
+                            <div>A. Mac Conkey agar</div>
+                            <div>B. Nutrition broth</div>
+                            <div>C. Blood agar</div>
+                            <div>D. Chocalate</div>
+                        </ul>
+                    </span>
+                    <button onclick="toggleAnswer('ans2a')">Show Answer</button>
+                    <div id="ans2a" class="answer-box">C. Blood agar</div>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="https://files.catbox.moe/ejn2qb.jpg" alt="Exam Image">
+            </div>
         </div>
 
-        <div class="question-item">
-            <span class="question-text"><strong>Q2:</strong> What is the purpose of it?</span>
-            <button onclick="toggleAnswer('ans3b')">Show Answer</button>
-            <div id="ans3b" class="answer-box">To transfer the bacteria from the sample to medium and isolate a pure colony of bacteria</div>
-        </div>
-        
-    
-    </div>
-
-    <div class="image-section">
-        <img src="https://files.catbox.moe/6jrgug.jpg" alt="Exam Image">
-    </div>
-</div>
-</div>
-  
-  <div class="lab">
-  <h1 style="text-align:center;">LAB 4 - END-ROTATION</h1>
-
-<div class="quiz-card">
-    <div class="question-section">
-      <div class="question-item">
-    <span class="question-text"><strong>Q1:</strong> This capsulate stain is?</span>
-    
-    <ul style="list-style-type: disc; margin-left: 20px; padding: 0; line-height: 1.8;">
-        <div>A. Malachite green</div>
-        <div>B. Leifson flagella</div>
-        <div>C. Gram Stain</div>
-        <div>D. India ink</div>
-        <div>E. Acid-fast stain</div>
-    </ul>
-
-    <button onclick="toggleAnswer('ans4a')">Show Answer</button>
-    <div id="ans4a" class="answer-box">D. India ink</div>
-</div>
-</div>
-
-    <div class="image-section">
-        <img src="https://files.catbox.moe/o8f1ms.jpg" alt="Exam Image">
-    </div>
-</div>
-
-
-<div class="quiz-card">
-    <div class="question-section">
-      <div class="question-item">
-    <span class="question-text"><strong>Q1:</strong> All of the following are used in gram staining except:</span>
-    
-    <ul style="list-style-type: disc; margin-left: 20px; padding: 0; line-height: 1.8;">
-        <div>A. Crystal violet</div>
-        <div>B. Acetone</div>
-        <div>C. Iodine</div>
-        <div>D. Malachite green</div>
-        <div>E. Safranine</div>
-    </ul>
-
-    <button onclick="toggleAnswer('ans4b')">Show Answer</button>
-    <div id="ans4b" class="answer-box">D. Malachite green</div>
-</div>
-</div>
-
-    <div class="image-section">
-        <img src="https://files.catbox.moe/xr2w53.jpg" alt="Exam Image" style="height:300px;">
-    </div>
-</div>
-  
-  <div class="quiz-card">
-    <div class="question-section">
-   <div class="question-item">
-    <span class="question-text"><strong>Q1:</strong> Which of the following is acid-fast bacteria?</span>
-    
-    <ul style="list-style-type: disc; margin-left: 20px; padding: 0; line-height: 1.8;">
-        <div>A. Staphylococcus aureus</div>
-        <div>B. Escherichia coli</div>
-        <div>C. Streptococcus pneumoniae</div>
-        <div>D. Neisseria gonorrhoeae</div>
-        <div>E. Mycobacterium tuberculosis</div>
-    </ul>
-
-    <button onclick="toggleAnswer('ans4c')">Show Answer</button>
-    <div id="ans4c" class="answer-box">E. Mycobacterium tuberculosis</div>
-</div>
-</div>
-</div>
-
-
-  <div class="quiz-card">
-    <div class="question-section">
-   <div class="question-item">
-    <span class="question-text"><strong>Q1:</strong> Identify the stain.</span>
-    
-    <button onclick="toggleAnswer('ans4d')">Show Answer</button>
-    <div id="ans4d" class="answer-box">Leifson flagella stain</div>
-</div>
-     <div class="question-item">
-    <span class="question-text"><strong>Q2:</strong> Identify the type of the stain.</span>
-    
-    <button onclick="toggleAnswer('ans4e')">Show Answer</button>
-    <div id="ans4e" class="answer-box">Special stain</div>
-</div>
-
-</div>
-  <div class="image-section">
-        <img src="https://files.catbox.moe/fl9uge.jpg" alt="Exam Image" style="height:250px;">
-    </div>
-</div>
-
-  <div class="quiz-card">
-    <div class="question-section">
-   <div class="question-item">
-    <span class="question-text"><strong>Q1:</strong> Which stain is used for spores?</span>
-    
-    <button onclick="toggleAnswer('ans4f')">Show Answer</button>
-    <div id="ans4f" class="answer-box">Malachite green</div>
-</div>
-     
-
-
-</div>
-  <div class="image-section">
-        <img src="https://files.catbox.moe/nek467.jpg" alt="Exam Image" style="height:250px;">
-    </div>
-</div>
-</div>
-
- <div class="lab">
-<h1 style="text-align:center;">LAB 5 - END-ROTATION</h1>
-
-<!-- First Quiz Card -->
-<div class="quiz-card">
-    <div class="question-section">
-        <div class="question-item">
-            <span class="question-text"><strong>Q1:</strong> What is the test called?</span>
-            <button onclick="toggleAnswer('ans5a')">Show Answer</button>
-            <div id="ans5a" class="answer-box">Latex agglutination test</div>
+        <div class="quiz-card">
+            <div class="question-section">
+                <div class="question-item">
+                    <span class="question-text"><strong>Q1:</strong> What is this called?</span>
+                    <button onclick="toggleAnswer('ans2b')">Show Answer</button>
+                    <div id="ans2b" class="answer-box">Transport medium (cary-blair medium)</div>
+                </div>
+                <div class="question-item">
+                    <span class="question-text"><strong>Q2:</strong> What is used for?</span>
+                    <button onclick="toggleAnswer('ans2c')">Show Answer</button>
+                    <div id="ans2c" class="answer-box">for transporting specimens</div>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="https://files.catbox.moe/pmv829.jpg" alt="Exam Image">
+            </div>
         </div>
 
-        <div class="question-item">
-            <span class="question-text"><strong>Q2:</strong> How can you know that the test is positive?</span>
-            <button onclick="toggleAnswer('ans5b')">Show Answer</button>
-            <div id="ans5b" class="answer-box">Agglutination or clumping</div>
+        <div class="quiz-card">
+            <div class="question-section">
+                <div class="question-item">
+                    <span class="question-text"><strong>Q1:</strong> Which of the following is both selective and differential media?
+                        <ul style="list-style-type: disc; margin-left: 20px; padding: 0; line-height: 1.8;">
+                            <div>A. Nutrient agar</div>
+                            <div>B. Blood agar</div>
+                            <div>C. MacConkey agar</div>
+                            <div>D. Chocolate agar</div>
+                            <div>E. Enriched media</div>
+                        </ul>
+                    </span>
+                    <button onclick="toggleAnswer('ans2d')">Show Answer</button>
+                    <div id="ans2d" class="answer-box">C. MacConkey agar</div>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="https://files.catbox.moe/aqujmp.jpg" alt="Exam Image">
+            </div>
         </div>
-    </div>
 
-    <div class="image-section">
-        <img src="https://files.catbox.moe/io74a1.jpg" alt="Exam Image" style="height:280px;">
-    </div>
-</div>
-
-<!-- Second Quiz Card -->
-<div class="quiz-card">
-    <div class="question-section">
-        <div class="question-item">
-            <span class="question-text"><strong>Q1:</strong> What is the name of the test?</span>
-            <button onclick="toggleAnswer('ans5c')">Show Answer</button>
-            <div id="ans5c" class="answer-box">Blood typing (AB and Rh) using agglutination</div>
-        </div>
-
-        <div class="question-item">
-            <span class="question-text"><strong>Q2:</strong> What does the clumping indicate?</span>
-            <button onclick="toggleAnswer('ans5d')">Show Answer</button>
-            <div id="ans5d" class="answer-box">
-                Indicates the presence of the corresponding antigen.
-                <div>Result: AB+, A+</div>
+        <div class="quiz-card">
+            <div class="question-section">
+                <div class="question-item">
+                    <span class="question-text"><strong>Q1:</strong> Identify the media.</span>
+                    <button onclick="toggleAnswer('ans2e')">Show Answer</button>
+                    <div id="ans2e" class="answer-box">Mac Conkey’s agar</div>
+                </div>
+                <div class="question-item">
+                    <span class="question-text"><strong>Q2:</strong> Mention the type of the media according to its functional use.</span>
+                    <button onclick="toggleAnswer('ans2f')">Show Answer</button>
+                    <div id="ans2f" class="answer-box">Selective media</div>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="https://files.catbox.moe/99yvym.jpg" alt="Exam Image">
             </div>
         </div>
     </div>
 
-    <div class="image-section">
-        <img src="https://files.catbox.moe/oo3by0.jpg" alt="Exam Image" style="height:300px;">
-    </div>
-</div>
-
-<!-- Third Quiz Card -->
-<div class="quiz-card">
-    <div class="question-section">
-        <div class="question-item">
-            <span class="question-text"><strong>Q1:</strong> What is the name of the test?</span>
-            <button onclick="toggleAnswer('ans5e')">Show Answer</button>
-            <div id="ans5e" class="answer-box">Latex agglutination test</div>
-        </div>
-
-        <div class="question-item">
-            <span class="question-text"><strong>Q2:</strong> Mention the types of test.</span>
-            <button onclick="toggleAnswer('ans5f')">Show Answer</button>
-            <div id="ans5f" class="answer-box">
-                <div>1. Active agglutination slide tests</div>
-                <div>2. Passive agglutination slide tests</div>
+    <div class="lab">
+        <h1 style="text-align:center;">LAB 3 - END-ROTATION</h1>
+        <div class="quiz-card">
+            <div class="question-section">
+                <div class="question-item">
+                    <span class="question-text"><strong>Q1:</strong> Identify the action.</span>
+                    <button onclick="toggleAnswer('ans3a')">Show Answer</button>
+                    <div id="ans3a" class="answer-box">Inoculation</div>
+                </div>
+                <div class="question-item">
+                    <span class="question-text"><strong>Q2:</strong> What is the purpose of it?</span>
+                    <button onclick="toggleAnswer('ans3b')">Show Answer</button>
+                    <div id="ans3b" class="answer-box">To transfer the bacteria from the sample to medium and isolate a pure colony of bacteria</div>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="https://files.catbox.moe/6jrgug.jpg" alt="Exam Image">
             </div>
         </div>
     </div>
 
-    <div class="image-section">
-        <img src="https://files.catbox.moe/io74a1.jpg" alt="Exam Image" style="height:280px;">
+    <div class="lab">
+        <h1 style="text-align:center;">LAB 4 - END-ROTATION</h1>
+        <div class="quiz-card">
+            <div class="question-section">
+                <div class="question-item">
+                    <span class="question-text"><strong>Q1:</strong> This capsulate stain is?</span>
+                    <ul style="list-style-type: disc; margin-left: 20px; padding: 0; line-height: 1.8;">
+                        <div>A. Malachite green</div>
+                        <div>B. Leifson flagella</div>
+                        <div>C. Gram Stain</div>
+                        <div>D. India ink</div>
+                        <div>E. Acid-fast stain</div>
+                    </ul>
+                    <button onclick="toggleAnswer('ans4a')">Show Answer</button>
+                    <div id="ans4a" class="answer-box">D. India ink</div>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="https://files.catbox.moe/o8f1ms.jpg" alt="Exam Image">
+            </div>
+        </div>
+
+        <div class="quiz-card">
+            <div class="question-section">
+                <div class="question-item">
+                    <span class="question-text"><strong>Q1:</strong> All of the following are used in gram staining except:</span>
+                    <ul style="list-style-type: disc; margin-left: 20px; padding: 0; line-height: 1.8;">
+                        <div>A. Crystal violet</div>
+                        <div>B. Acetone</div>
+                        <div>C. Iodine</div>
+                        <div>D. Malachite green</div>
+                        <div>E. Safranine</div>
+                    </ul>
+                    <button onclick="toggleAnswer('ans4b')">Show Answer</button>
+                    <div id="ans4b" class="answer-box">D. Malachite green</div>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="https://files.catbox.moe/xr2w53.jpg" alt="Exam Image" style="height:300px;">
+            </div>
+        </div>
+      
+        <div class="quiz-card">
+            <div class="question-section">
+                <div class="question-item">
+                    <span class="question-text"><strong>Q1:</strong> Which of the following is acid-fast bacteria?</span>
+                    <ul style="list-style-type: disc; margin-left: 20px; padding: 0; line-height: 1.8;">
+                        <div>A. Staphylococcus aureus</div>
+                        <div>B. Escherichia coli</div>
+                        <div>C. Streptococcus pneumoniae</div>
+                        <div>D. Neisseria gonorrhoeae</div>
+                        <div>E. Mycobacterium tuberculosis</div>
+                    </ul>
+                    <button onclick="toggleAnswer('ans4c')">Show Answer</button>
+                    <div id="ans4c" class="answer-box">E. Mycobacterium tuberculosis</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="quiz-card">
+            <div class="question-section">
+                <div class="question-item">
+                    <span class="question-text"><strong>Q1:</strong> Identify the stain.</span>
+                    <button onclick="toggleAnswer('ans4d')">Show Answer</button>
+                    <div id="ans4d" class="answer-box">Leifson flagella stain</div>
+                </div>
+                <div class="question-item">
+                    <span class="question-text"><strong>Q2:</strong> Identify the type of the stain.</span>
+                    <button onclick="toggleAnswer('ans4e')">Show Answer</button>
+                    <div id="ans4e" class="answer-box">Special stain</div>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="https://files.catbox.moe/fl9uge.jpg" alt="Exam Image" style="height:250px;">
+            </div>
+        </div>
+
+        <div class="quiz-card">
+            <div class="question-section">
+                <div class="question-item">
+                    <span class="question-text"><strong>Q1:</strong> Which stain is used for spores?</span>
+                    <button onclick="toggleAnswer('ans4f')">Show Answer</button>
+                    <div id="ans4f" class="answer-box">Malachite green</div>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="https://files.catbox.moe/nek467.jpg" alt="Exam Image" style="height:250px;">
+            </div>
+        </div>
     </div>
-</div>
 
-</div>
+    <div class="lab">
+        <h1 style="text-align:center;">LAB 5 - END-ROTATION</h1>
+        <div class="quiz-card">
+            <div class="question-section">
+                <div class="question-item">
+                    <span class="question-text"><strong>Q1:</strong> What is the test called?</span>
+                    <button onclick="toggleAnswer('ans5a')">Show Answer</button>
+                    <div id="ans5a" class="answer-box">Latex agglutination test</div>
+                </div>
+                <div class="question-item">
+                    <span class="question-text"><strong>Q2:</strong> How can you know that the test is positive?</span>
+                    <button onclick="toggleAnswer('ans5b')">Show Answer</button>
+                    <div id="ans5b" class="answer-box">Agglutination or clumping</div>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="https://files.catbox.moe/io74a1.jpg" alt="Exam Image" style="height:280px;">
+            </div>
+        </div>
 
+        <div class="quiz-card">
+            <div class="question-section">
+                <div class="question-item">
+                    <span class="question-text"><strong>Q1:</strong> What is the name of the test?</span>
+                    <button onclick="toggleAnswer('ans5c')">Show Answer</button>
+                    <div id="ans5c" class="answer-box">Blood typing (AB and Rh) using agglutination</div>
+                </div>
+                <div class="question-item">
+                    <span class="question-text"><strong>Q2:</strong> What does the clumping indicate?</span>
+                    <button onclick="toggleAnswer('ans5d')">Show Answer</button>
+                    <div id="ans5d" class="answer-box">Indicates the presence of the corresponding antigen.<div>Result: AB+, A+</div></div>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="https://files.catbox.moe/oo3by0.jpg" alt="Exam Image" style="height:300px;">
+            </div>
+        </div>
+
+        <div class="quiz-card">
+            <div class="question-section">
+                <div class="question-item">
+                    <span class="question-text"><strong>Q1:</strong> What is the name of the test?</span>
+                    <button onclick="toggleAnswer('ans5e')">Show Answer</button>
+                    <div id="ans5e" class="answer-box">Latex agglutination test</div>
+                </div>
+                <div class="question-item">
+                    <span class="question-text"><strong>Q2:</strong> Mention the types of test.</span>
+                    <button onclick="toggleAnswer('ans5f')">Show Answer</button>
+                    <div id="ans5f" class="answer-box">
+                        <div>1. Active agglutination slide tests</div>
+                        <div>2. Passive agglutination slide tests</div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="https://files.catbox.moe/io74a1.jpg" alt="Exam Image" style="height:280px;">
+            </div>
+        </div>
+    </div>
+
+    <div class="lab">
+        <h1 style="text-align:center;">LAB 6 - END-ROTATION</h1>
+        <div class="quiz-card">
+            <div class="question-section">
+                <div class="question-item">
+                    <span class="question-text"><strong>Q1:</strong> Which laboratory test is needed for a patient who presents with diarrhea, abdominal pain, anemia, poor growth or low weight, or abnormal stool color?</span>
+                    <button onclick="toggleAnswer('ans6a')">Show Answer</button>
+                    <div id="ans6a" class="answer-box">Stool examination (analysis)</div>
+                </div>
+                <div class="question-item">
+                    <span class="question-text"><strong>Q2:</strong> Which one of the following specimen is used for detection of entamoeba histolytica?
+                        <ul style="list-style-type: disc; margin-left: 20px; padding: 0; line-height: 1.8;">
+                            <div>A. Stool</div>
+                            <div>B. Blood</div>
+                            <div>C. Urine</div>
+                            <div>D. Sputum</div>
+                            <div>E. Saliva</div>
+                        </ul>
+                    </span>
+                    <button onclick="toggleAnswer('ans6b')">Show Answer</button>
+                    <div id="ans6b" class="answer-box">A. Stool</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lab">
+        <h1 style="text-align:center;">LAB 7 - END-ROTATION</h1>
+        <div class="quiz-card">
+            <div class="question-section">
+                <div class="question-item">
+                    <span class="question-text"><strong>Q1:</strong> Name five abnormal compositions of urine.</span>
+                    <button onclick="toggleAnswer('ans7a')">Show Answer</button>
+                    <div id="ans7a" class="answer-box">Carbohydrates, Proteins, Fats, Ketone bodies, Blood, Bile salts, Bile pigments.</div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     
- <div class="lab">
-  <h1 style="text-align:center;">LAB 6 - END-ROTATION</h1>
-
-<div class="quiz-card">
-    <div class="question-section">
-        
-        
-        <div class="question-item">
-            <span class="question-text"><strong>Q1:</strong> Which laboratory test is needed for a patient who presents with diarrhea, abdominal pain, anemia, poor growth or low weight, or abnormal stool color?
-
-            
-            </span>
-            <button onclick="toggleAnswer('ans6a')">Show Answer</button>
-            <div id="ans6a" class="answer-box">Stool examination (analysis)</div>
-        </div>
-    <div class="question-item">
-            <span class="question-text"><strong>Q2:</strong> Which one of the following specimen is used for detection of entamoeba histolytica?
-              <ul style="list-style-type: disc; margin-left: 20px; padding: 0; line-height: 1.8;">
-        <div>A. Stool</div>
-        <div>B. Blood</div>
-        <div>C. Urine</div>
-        <div>D. Sputum</div>
-        <div>E. Saliva</div>
-    </ul>
-            
-            </span>
-            <button onclick="toggleAnswer('ans6b')">Show Answer</button>
-            <div id="ans6b" class="answer-box">A. Stool</div>
-        </div>
-    </div>
-  </div>
-  </div>
-
-
-
-
- <div class="lab">
-  <h1 style="text-align:center;">LAB 7 - END-ROTATION</h1>
-
-<div class="quiz-card">
-    <div class="question-section">
-        <div class="question-item">
-            <span class="question-text"><strong>Q1:</strong> Name five abnormal compositions of urine.</span>
-            <button onclick="toggleAnswer('ans7a')">Show Answer</button>
-            <div id="ans7a" class="answer-box">Carbohydrates, Proteins, Fats, Ketone bodies, Blood, Bile salts, Bile pigments.</div>
+        <h1 style="text-align:center;">LAB 8 - END-ROTATION</h1>
+        <div class="quiz-card">
+            <div class="question-section">
+                <div class="question-item">
+                    <span class="question-text"><strong>Q1:</strong> Name is this?</span>
+                    <button onclick="toggleAnswer('ans8a')">Show Answer</button>
+                    <div id="ans8a" class="answer-box">Candida albicans or yeast like fungi</div>
+                </div>
+                <div class="question-item">
+                    <span class="question-text"><strong>Q2:</strong> What is its characteristic?</span>
+                    <button onclick="toggleAnswer('ans8b')">Show Answer</button>
+                    <div id="ans8b" class="answer-box">Pseudohyphae formation</div>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="https://files.catbox.moe/hhfkza.jpg" alt="Exam Image">
+            </div>
         </div>
 
-    </div>
-  </div>
-  </div>
-  
-
-        
-  <div class="Lab">
-  
-<h1 style="text-align:center;">LAB 8 - END-ROTATION</h1>
-
-<div class="quiz-card">
-    <div class="question-section">
-        <div class="question-item">
-            <span class="question-text"><strong>Q1:</strong> Name is this?</span>
-            <button onclick="toggleAnswer('ans8a')">Show Answer</button>
-            <div id="ans8a" class="answer-box">Candida albicans or yeast like fungi</div>
+        <div class="quiz-card">
+            <div class="question-section">
+                <div class="question-item">
+                    <span class="question-text"><strong>Q1:</strong> Identify.</span>
+                    <button onclick="toggleAnswer('ans8c')">Show Answer</button>
+                    <div id="ans8c" class="answer-box">Yeast</div>
+                </div> 
+                <div class="question-item">
+                    <span class="question-text"><strong>Q2:</strong> What is the type of culture?</span>
+                    <button onclick="toggleAnswer('ans8d')">Show Answer</button>
+                    <div id="ans8d" class="answer-box">SDA (Sabouraud's dextrose agar)</div>
+                </div>
+            </div> 
+            <div class="image-section">
+                <img src="https://files.catbox.moe/v3soxx.jpg" alt="Exam Image" style="height:250px; width:200px;">
+            </div>
         </div>
 
-        <div class="question-item">
-            <span class="question-text"><strong>Q2:</strong> What is its characteristic?</span>
-            <button onclick="toggleAnswer('ans8b')">Show Answer</button>
-            <div id="ans8b" class="answer-box">Pseudohyphae formation</div>
+        <div class="quiz-card">
+            <div class="question-section">
+                <div class="question-item">
+                    <span class="question-text"><strong>Q1:</strong> Name of the species?</span>
+                    <button onclick="toggleAnswer('ans8e')">Show Answer</button>
+                    <div id="ans8e" class="answer-box">Candida albicans or yeast like fungi</div>
+                </div>
+                <div class="question-item">
+                    <span class="question-text"><strong>Q2:</strong> What is the stain used?</span>
+                    <button onclick="toggleAnswer('ans8f')">Show Answer</button>
+                    <div id="ans8f" class="answer-box">Gram Stain or Periodic acid-Schiff stain</div>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="https://files.catbox.moe/hhfkza.jpg" alt="Exam Image">
+            </div>
         </div>
-        
     
-    </div>
 
-    <div class="image-section">
-        <img src="https://files.catbox.moe/hhfkza.jpg" alt="Exam Image">
-    </div>
-</div>
+    <script>
+        // PROTECTION: Disables right-click
+        document.addEventListener('contextmenu', event => event.preventDefault());
 
-<div class="quiz-card">
-    <div class="question-section">
-        <div class="question-item">
-            <span class="question-text"><strong>Q1:</strong> Identify.</span>
-            <button onclick="toggleAnswer('ans8c')">Show Answer</button>
-            <div id="ans8c" class="answer-box">Yeast</div>
-        </div> <div class="question-item">
-            <span class="question-text"><strong>Q2:</strong> What is the type of culture?</span>
-            <button onclick="toggleAnswer('ans8d')">Show Answer</button>
-            <div id="ans8d" class="answer-box">SDA (Sabouraud's dextrose agar)</div>
-        </div>
-    </div> <div class="image-section">
-        <img src="https://files.catbox.moe/v3soxx.jpg" alt="Exam Image" style="height:250px; width:200px;">
-    </div>
-      </div>
-  
-  <div class="quiz-card">
-    <div class="question-section">
-        <div class="question-item">
-            <span class="question-text"><strong>Q1:</strong> Name of the species?</span>
-            <button onclick="toggleAnswer('ans8e')">Show Answer</button>
-            <div id="ans8e" class="answer-box">Candida albicans or yeast like fungi</div>
-        </div>
+        function toggleAnswer(id) {
+            var x = document.getElementById(id);
+            // Identifies the button that triggered the click
+            var btn = event.currentTarget;
 
-        
-        <div class="question-item">
-            <span class="question-text"><strong>Q2:</strong> What is the stain used?</span>
-            <button onclick="toggleAnswer('ans8f')">Show Answer</button>
-            <div id="ans8f" class="answer-box">Gram Stain or Periodic acid-Schiff stain</div>
-        </div>
-    </div>
-  
-    <div class="image-section">
-        <img src="https://files.catbox.moe/hhfkza.jpg" alt="Exam Image">
-    </div>
-</div>
-  </div>
-
-  
-   <script>
-    function toggleAnswer(id) {
-        var x = document.getElementById(id);
-        // Find the button that was just clicked
-        var btn = event.currentTarget; 
-
-        if (x.style.display === "block") {
-            x.style.display = "none";
-            btn.innerHTML = "Show Answer";
-        } else {
-            x.style.display = "block";
-            btn.innerHTML = "Hide Answer";
+            if (x.style.display === "block") {
+                x.style.display = "none";
+                btn.innerHTML = "Show Answer";
+            } else {
+                x.style.display = "block";
+                btn.innerHTML = "Hide Answer";
+            }
         }
-    }
-   </script>
+    </script>
 
 </body>
 </html>
+
