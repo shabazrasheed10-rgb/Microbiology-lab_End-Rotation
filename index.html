@@ -72,7 +72,7 @@
             border-radius: 5px;
             
         }
-        .Lab{
+        .lab{
           margin-bottom: 100px;
           border-bottom: 2px solid grey;
         }
@@ -108,7 +108,7 @@
     </style>
 </head>
 <body>
-
+<div class="lab">
    <h1 style="text-align:center;">LAB 1 - END-ROTATION</h1>
 
 <div class="quiz-card">
@@ -175,8 +175,9 @@
         <img src="https://files.catbox.moe/6q3j4h.jpg" alt="Exam Image">
     </div>
 </div>
+</div>
         
-    
+    <div class="lab">
   <h1 style="text-align:center;">LAB 2 - END-ROTATION</h1>
 
 <div class="quiz-card">
@@ -267,11 +268,12 @@
         <img src="https://files.catbox.moe/99yvym.jpg" alt="Exam Image">
     </div>
 </div>
+</div>
         
   
   
   
-  
+  <div class="lab">
   <h1 style="text-align:center;">LAB 3 - END-ROTATION</h1>
 
 <div class="quiz-card">
@@ -295,8 +297,9 @@
         <img src="https://files.catbox.moe/6jrgug.jpg" alt="Exam Image">
     </div>
 </div>
+</div>
   
-  
+  <div class="lab">
   <h1 style="text-align:center;">LAB 4 - END-ROTATION</h1>
 
 <div class="quiz-card">
@@ -403,91 +406,101 @@
         <img src="https://files.catbox.moe/nek467.jpg" alt="Exam Image" style="height:250px;">
     </div>
 </div>
+</div>
 
-
+ <div class="lab">
 <h1 style="text-align:center;">LAB 5 - END-ROTATION</h1>
 
+<!-- First Quiz Card -->
 <div class="quiz-card">
     <div class="question-section">
-      <div class="question-item">
-    <span class="question-text"><strong>Q1:</strong> This capsulate stain is?</span>
-    
-    <ul style="list-style-type: disc; margin-left: 20px; padding: 0; line-height: 1.8;">
-        <div>A. Malachite green</div>
-        <div>B. Leifson flagella</div>
-        <div>C. Gram Stain</div>
-        <div>D. India ink</div>
-        <div>E. Acid-fast stain</div>
-    </ul>
+        <div class="question-item">
+            <span class="question-text"><strong>Q1:</strong> What is the test called?</span>
+            <button onclick="toggleAnswer('ans5a')">Show Answer</button>
+            <div id="ans5a" class="answer-box">Latex agglutination test</div>
+        </div>
 
-    <button onclick="toggleAnswer('ans4a')">Show Answer</button>
-    <div id="ans4a" class="answer-box">D. India ink</div>
-</div>
-</div>
+        <div class="question-item">
+            <span class="question-text"><strong>Q2:</strong> How can you know that the test is positive?</span>
+            <button onclick="toggleAnswer('ans5b')">Show Answer</button>
+            <div id="ans5b" class="answer-box">Agglutination or clumping</div>
+        </div>
+    </div>
 
     <div class="image-section">
-        <img src="https://files.catbox.moe/io74a1.jpg" alt="Exam Image">
-    </div>
-</div>
-
-
-<div class="quiz-card">
-    <div class="question-section">
-      <div class="question-item">
-    <span class="question-text"><strong>Q1:</strong> All of the following are used in gram staining except:</span>
-    
-    <ul style="list-style-type: disc; margin-left: 20px; padding: 0; line-height: 1.8;">
-        <div>A. Crystal violet</div>
-        <div>B. Acetone</div>
-        <div>C. Iodine</div>
-        <div>D. Malachite green</div>
-        <div>E. Safranine</div>
-    </ul>
-
-    <button onclick="toggleAnswer('ans4b')">Show Answer</button>
-    <div id="ans4b" class="answer-box">D. Malachite green</div>
-</div>
-</div>
-
-    <div class="image-section">
-        <img src="https://files.catbox.moe/xr2w53.jpg" alt="Exam Image" style="height:300px;">
-    </div>
-</div>
-  
- 
-</div>
-</div>
-
-
-  <div class="quiz-card">
-    <div class="question-section">
-   <div class="question-item">
-    <span class="question-text"><strong>Q1:</strong> Identify the stain.</span>
-    
-    <button onclick="toggleAnswer('ans4d')">Show Answer</button>
-    <div id="ans4d" class="answer-box">Leifson flagella stain</div>
-</div>
-     <div class="question-item">
-    <span class="question-text"><strong>Q2:</strong> Identify the type of the stain.</span>
-    
-    <button onclick="toggleAnswer('ans4e')">Show Answer</button>
-    <div id="ans4e" class="answer-box">Special stain</div>
-</div>
-
-</div>
-  <div class="image-section">
         <img src="https://files.catbox.moe/io74a1.jpg" alt="Exam Image" style="height:280px;">
     </div>
 </div>
+
+<!-- Second Quiz Card -->
+<div class="quiz-card">
+    <div class="question-section">
+        <div class="question-item">
+            <span class="question-text"><strong>Q1:</strong> What is the name of the test?</span>
+            <button onclick="toggleAnswer('ans5c')">Show Answer</button>
+            <div id="ans5c" class="answer-box">Blood typing (AB and Rh) using agglutination</div>
+        </div>
+
+        <div class="question-item">
+            <span class="question-text"><strong>Q2:</strong> What does the clumping indicate?</span>
+            <button onclick="toggleAnswer('ans5d')">Show Answer</button>
+            <div id="ans5d" class="answer-box">
+                Indicates the presence of the corresponding antigen.
+                <div>Result: AB+, A+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-section">
+        <img src="https://files.catbox.moe/oo3by0.jpg" alt="Exam Image" style="height:300px;">
+    </div>
+</div>
+
+<!-- Third Quiz Card -->
+<div class="quiz-card">
+    <div class="question-section">
+        <div class="question-item">
+            <span class="question-text"><strong>Q1:</strong> What is the name of the test?</span>
+            <button onclick="toggleAnswer('ans5e')">Show Answer</button>
+            <div id="ans5e" class="answer-box">Latex agglutination test</div>
+        </div>
+
+        <div class="question-item">
+            <span class="question-text"><strong>Q2:</strong> Mention the types of test.</span>
+            <button onclick="toggleAnswer('ans5f')">Show Answer</button>
+            <div id="ans5f" class="answer-box">
+                <div>1. Active agglutination slide tests</div>
+                <div>2. Passive agglutination slide tests</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-section">
+        <img src="https://files.catbox.moe/io74a1.jpg" alt="Exam Image" style="height:280px;">
+    </div>
+</div>
+
 </div>
 
 
+    
+ <div class="lab">
   <h1 style="text-align:center;">LAB 6 - END-ROTATION</h1>
 
 <div class="quiz-card">
     <div class="question-section">
+        
+        
         <div class="question-item">
-            <span class="question-text"><strong>Q1:</strong> which one of the following specimen is used for detection of entamoeba histolytica?
+            <span class="question-text"><strong>Q1:</strong> Which laboratory test is needed for a patient who presents with diarrhea, abdominal pain, anemia, poor growth or low weight, or abnormal stool color?
+
+            
+            </span>
+            <button onclick="toggleAnswer('ans6a')">Show Answer</button>
+            <div id="ans6a" class="answer-box">Stool examination (analysis)</div>
+        </div>
+    <div class="question-item">
+            <span class="question-text"><strong>Q2:</strong> Which one of the following specimen is used for detection of entamoeba histolytica?
               <ul style="list-style-type: disc; margin-left: 20px; padding: 0; line-height: 1.8;">
         <div>A. Stool</div>
         <div>B. Blood</div>
@@ -497,13 +510,17 @@
     </ul>
             
             </span>
-            <button onclick="toggleAnswer('ans6a')">Show Answer</button>
-            <div id="ans6a" class="answer-box">A. Stool</div>
+            <button onclick="toggleAnswer('ans6b')">Show Answer</button>
+            <div id="ans6b" class="answer-box">A. Stool</div>
         </div>
-
     </div>
   </div>
+  </div>
 
+
+
+
+ <div class="lab">
   <h1 style="text-align:center;">LAB 7 - END-ROTATION</h1>
 
 <div class="quiz-card">
@@ -516,14 +533,10 @@
 
     </div>
   </div>
+  </div>
+  
 
         
-    
-
-
-
-  
-  
   <div class="Lab">
   
 <h1 style="text-align:center;">LAB 8 - END-ROTATION</h1>
@@ -602,4 +615,3 @@
 
 </body>
 </html>
-
